@@ -9,3 +9,24 @@ h1 {
 h2 {
     color:cornflowerblue
 }
+
+.brano {
+    color:blue
+}
+
+.strofa {
+    color:darkcyan
+}
+.finale {
+    color:blueviolet
+
+}
+.ritornello {
+    color:darkslateblue
+}
+#nota {
+    font-style:italic
+}
+nav a {
+    color:deepskyblue
+}
