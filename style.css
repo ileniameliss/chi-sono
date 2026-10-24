@@ -4,13 +4,28 @@
    sostegno hsl(38 90% 60%)
    accento  hsl(12 78% 48%)  */
 body {
-  background: hsl(259, 100%, 97%);
-  color: hsl(241, 43%, 25%);
+    background: hsl(259, 100%, 97%);
+    color: hsl(241, 43%, 25%);
 }
 
 h1,
+h2 {
+    font-family: "Sail", system-ui;
+    
+    font-style: normal;
+
+}
+p, li, a {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+
+h1,
 a {
-  color: hsl(260, 50%, 42%);
+    color: hsl(260, 50%, 42%);
 }
 
 /* body {
@@ -23,24 +38,27 @@ h1 {
 h2 {
     color: rgb(45, 101, 204)
 }
+
 .brano {
     color: blue
 }
+
 .strofa {
     color: darkcyan
 }
+
 .finale {
     color: blueviolet
 }
+
 .ritornello {
     color: darkslateblue
 }
+
 #nota {
     font-style: italic
 }
+
 nav a {
     color: rgb(0, 76, 255)
 }
-
-   
-
