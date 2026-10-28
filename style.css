@@ -4,6 +4,8 @@
    sostegno hsl(38 90% 60%)
    accento  hsl(12 78% 48%)  */
 
+   /*scala di spazi multipli di 0.5rem */
+
    *,
 *::before,
 *::after {
@@ -15,7 +17,6 @@ body {
     padding: 1rem;
     line-height: 1.6;
 }
-
 h1,
 h2 {
     font-family: "Sail", system-ui;
@@ -24,7 +25,6 @@ h2 {
     margin: 0 0 .5rem;
 
 }
-
 p,
 li,
 a {
@@ -34,64 +34,60 @@ a {
     font-style: italic;
     
 }
-
 p {
     font-size: 1rem;
 }
-
 h3 {
     font-size: 1.25rem;
 }
-
 h2 {
     font-size: 1.563rem;
 }
-
 h1 {
     font-size: 1.953rem;
 }
-
 a:hover {
     color: hsl(245, 82%, 34%);
     text-decoration: underline;
 }
-
 h1,
 a {
     color: hsl(260, 50%, 42%);
 }
-
-/* body {
-    background: hsl(250,100%,99%);
-    color: #2a2420;
-}
-h1 {
-    color: rgb(60, 60, 182);
-} */
 h2 {
     color: rgb(45, 101, 204)
 }
-
 .brano {
     color: blue
 }
-
 .strofa {
     color: darkcyan
 }
-
 .finale {
     color: blueviolet
 }
-
 .ritornello {
     color: darkslateblue
 }
-
 #nota {
     font-style: italic
 }
-
 nav a {
     color: rgb(0, 76, 255)
+}
+.contenitore {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #e4dccf;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card h2 {
+  margin: 0 0 .5rem;
 }
