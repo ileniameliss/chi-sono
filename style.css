@@ -3,6 +3,12 @@
    testo    hsl(25 30% 15%)
    sostegno hsl(38 90% 60%)
    accento  hsl(12 78% 48%)  */
+
+   *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
     background: hsl(259, 100%, 97%);
     color: hsl(241, 43%, 25%);
