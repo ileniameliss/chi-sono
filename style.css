@@ -6,22 +6,49 @@
 body {
     background: hsl(259, 100%, 97%);
     color: hsl(241, 43%, 25%);
+    padding: 1rem;
+    line-height: 1.6;
 }
 
 h1,
 h2 {
     font-family: "Sail", system-ui;
-    
     font-style: normal;
+    line-height: 1.15;
+    margin: 0 0 .5rem;
 
 }
-p, li, a {
-  font-family: "Lora", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: italic;
+
+p,
+li,
+a {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+    
 }
 
+p {
+    font-size: 1rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 1.563rem;
+}
+
+h1 {
+    font-size: 1.953rem;
+}
+
+a:hover {
+    color: hsl(245, 82%, 34%);
+    text-decoration: underline;
+}
 
 h1,
 a {
