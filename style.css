@@ -4,90 +4,174 @@
    sostegno hsl(38 90% 60%)
    accento  hsl(12 78% 48%)  */
 
-   /*scala di spazi multipli di 0.5rem */
+/*scala di spazi multipli di 0.5rem */
 
-   *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body {
-    background: hsl(259, 100%, 97%);
-    color: hsl(241, 43%, 25%);
-    padding: 1rem;
-    line-height: 1.6;
+  background: hsl(259, 100%, 97%);
+  color: hsl(241, 43%, 25%);
+  padding: 1rem;
+  line-height: 1.6;
 }
+
 h1,
 h2 {
-    font-family: "Sail", system-ui;
-    font-style: normal;
-    line-height: 1.15;
-    margin: 0 0 .5rem;
-
+  font-family: "Sail", system-ui;
+  font-style: normal;
+  line-height: 1.15;
+  margin: 0 0 0.5rem;
 }
+
 p,
 li,
 a {
-    font-family: "Lora", serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: italic;
-    
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
 }
+
 p {
-    font-size: 1rem;
+  font-size: 1rem;
 }
+
 h3 {
-    font-size: 1.25rem;
+  font-size: 1.25rem;
 }
+
 h2 {
-    font-size: 1.563rem;
+  font-size: 1.563rem;
 }
+
 h1 {
-    font-size: 1.953rem;
+  font-size: 1.953rem;
 }
+
 a:hover {
-    color: hsl(245, 82%, 34%);
-    text-decoration: underline;
+  color: hsl(245, 82%, 34%);
+  text-decoration: underline;
 }
+
 h1,
 a {
-    color: hsl(260, 50%, 42%);
+  color: hsl(260, 50%, 42%);
 }
+
 h2 {
-    color: rgb(45, 101, 204)
+  color: rgb(45, 101, 204);
 }
+
 .brano {
-    color: blue
+  color: blue;
 }
+
 .strofa {
-    color: darkcyan
+  color: darkcyan;
 }
+
 .finale {
-    color: blueviolet
+  color: blueviolet;
 }
+
 .ritornello {
-    color: darkslateblue
+  color: darkslateblue;
 }
+
 #nota {
-    font-style: italic
+  font-style: italic;
 }
+
 nav a {
-    color: rgb(0, 76, 255)
+  color: rgb(0, 76, 255);
 }
+
 .contenitore {
+  background-color: rgb(215, 230, 250);
   max-width: 40rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 .card {
   background: #fff;
   border: 1px solid #e4dccf;
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
 }
 
 .card h2 {
-  margin: 0 0 .5rem;
+  margin: 0 0.5rem;
+}
+
+.chisono {
+  background-color: #aad2f8;
+  background-image: url("immagini/ilenia.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e4e2ee;
+  padding: 4rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  background:
+    linear-gradient(180deg, rgba(98, 55, 183, 0.1), rgb(20 10 40 / 0.75)),
+    url("immagini/ileniapalco.jpg") center / cover;
+}
+
+.ritratto {
+  width: 18rem;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.playlist {
+  height: 5.5rem;
+  border-radius: 12px;
+  margin-bottom: 0.8rem;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(
+    160deg,
+    hsl(236, 80%, 55%),
+    hsl(278, 75%, 42%) 55%,
+    hsl(322, 86%, 41%)
+  );
+}
+.hero {
+  background-color: #aad2f8;
+  background-image: url("immagini/ileniapalco.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #e4e2ee;
+  place-items: center;
+  padding: 4rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  background:
+    linear-gradient(180deg, rgba(98, 55, 183, 0.1), rgb(20 10 40 / 0.75)),
+    url("immagini/ileniapalco.jpg") center / cover;
+}
+
+.bottone {
+  display: inline-block;
+  background: #fff;
+  color: hsl(335 70% 35%);
+  border-radius: 999px;
+  padding: 0.7rem 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.45);
 }
