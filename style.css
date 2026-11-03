@@ -105,6 +105,8 @@ nav a {
   margin-bottom: 1.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  flex: 1 1 12rem;
 }
 
 .card h2 {
@@ -174,4 +176,21 @@ nav a {
   font-weight: 700;
   text-decoration: none;
   box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.45);
+}
+.testata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  content: space-between;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
