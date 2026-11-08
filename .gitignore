@@ -1,1 +1,11 @@
+# File di sistema del Mac
 .DS_Store
+
+# Segreti: non vanno mai online
+.env
+
+# Cartelle dei pacchetti (le userai con JavaScript)
+node_modules/
+
+# File temporanei
+*.log
