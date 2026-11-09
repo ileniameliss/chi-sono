@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Lora", Georgia, serif;
+  line-height: 1.6;
+  background: hsl(30 60% 97%);
+  color: hsl(25 30% 15%);
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.testata {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+}
+.menu {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hero {
+  padding: 4rem 1.25rem;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(
+    160deg,
+    hsl(12 80% 55%),
+    hsl(335 70% 45%) 55%,
+    hsl(250 50% 25%)
+  );
+}
+.hero h1 {
+  font-size: clamp(2rem, 8vw, 4rem);
+  line-height: 1.1;
+  margin: 0 0 0.75rem;
+}
+
+.punti,
+.galleria {
+  display: grid;
+  gap: 1rem;
+  padding: 2rem 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 45rem) {
+  .punti,
+  .galleria {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
