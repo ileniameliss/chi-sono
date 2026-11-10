@@ -1,11 +1,3 @@
-/* Palette: tramonto
-   sfondo   hsl(30 60% 96%)
-   testo    hsl(25 30% 15%)
-   sostegno hsl(38 90% 60%)
-   accento  hsl(12 78% 48%)  */
-
-/*scala di spazi multipli di 0.5rem */
-
 *,
 *::before,
 *::after {
@@ -13,74 +5,38 @@
 }
 
 body {
-  background: hsl(259, 100%, 97%);
-  color: hsl(241, 43%, 25%);
+  background: var(--colore-sfondo);
+  color: var(--colore-testo);
   padding: 1rem;
   line-height: 1.6;
 }
+h1 {
+  font-family: var(--font-titoli);
+  font-size: var(--testo-5);
+}
 
-h1,
 h2 {
-  font-family: "Sail", system-ui;
-  font-style: normal;
-  line-height: 1.15;
-  margin: 0 0 0.5rem;
+  font-family: var(--font-titoli);
+  font-size: var(--testo-4);
 }
 
 p,
 li,
 a {
-  font-family: "Lora", serif;
+  font-family: var(--font-testo);
+  font-size: var(--testo-0);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: italic;
-}
-
-p {
-  font-size: 1rem;
-  max-width: 65ch;
 }
 
 h3 {
   font-size: 1.25rem;
 }
 
-h2 {
-  font-size: 1.563rem;
-}
-
-h1 {
-  font-size: 1.953rem;
-}
-
 a:hover {
-  color: hsl(245, 82%, 34%);
+  color: var(--colore-testo);
   text-decoration: underline;
-}
-
-h1,
-a {
-  color: hsl(260, 50%, 42%);
-}
-
-h2 {
-  color: rgb(45, 101, 204);
-}
-
-.brano {
-  color: blue;
-}
-
-.strofa {
-  color: darkcyan;
-}
-
-.finale {
-  color: blueviolet;
-}
-
-.ritornello {
-  color: darkslateblue;
 }
 
 #nota {
@@ -88,25 +44,24 @@ h2 {
 }
 
 nav a {
-  color: rgb(0, 76, 255);
+  color: var(--colore-accento-forte);
 }
 
 .contenitore {
-  background-color: rgb(215, 230, 250);
-  max-width: 40rem;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 .card {
-  background: #fff;
-  border: 1px solid #e4dccf;
+  background: var(--colore-sfondo);
+  border: 1px solid var(--colore-accento-forte);
   border-radius: 12px;
   padding: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px -4px var(--colore-accento);
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   flex: 1 1 12rem;
 }
@@ -116,17 +71,17 @@ nav a {
 }
 
 .chisono {
-  background-color: #aad2f8;
+  background-color: var(--colore-sfondo);
   background-image: url("immagini/ilenia.JPG");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #e4e2ee;
+  color: var(--colore-testo);
   padding: 4rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 24px -4px var(--colore-accento);
   background:
-    linear-gradient(180deg, rgba(98, 55, 183, 0.1), rgb(20 10 40 / 0.75)),
+    var(--colore-sfondo),
     url("immagini/ileniapalco.jpg") center / cover;
 }
 
@@ -138,46 +93,42 @@ nav a {
 }
 
 .playlist {
-  height: 5.5rem;
   border-radius: 12px;
   margin-bottom: 0.8rem;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   place-items: center;
-  color: #fff;
+  color: var(--colore-testo);
   font-weight: 700;
-  text-shadow: 0 1px 6px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(
-    160deg,
-    hsl(236, 80%, 55%),
-    hsl(278, 75%, 42%) 55%,
-    hsl(322, 86%, 41%)
-  );
+  text-shadow: 0 1px 6px var(--colore-accento);
+  background: var(--colore-sfondo);
+}
+.playlist h2 {
+  margin-block: 0.5rem;
 }
 .hero {
-  background-color: #aad2f8;
+  background-color: var(--color-sfondo);
   background-image: url("immagini/ileniapalco.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #e4e2ee;
+  color: var(--colore-sfondo);
   place-items: center;
   padding: 4rem 1.5rem;
   border-radius: 12px;
-  box-shadow: 0 8px 24px -4px rgba(0, 0, 0, 0.2);
-  background:
-    linear-gradient(180deg, rgba(98, 55, 183, 0.1), rgb(20 10 40 / 0.75)),
-    url("immagini/ileniapalco.jpg") center / cover;
+  box-shadow: 0 8px 24px -4px var(--colore-accento);
+  background: url("immagini/ileniapalco.jpg") center / cover;
 }
 
 .bottone {
   display: inline-block;
-  background: #fff;
-  color: hsl(335 70% 35%);
+  background: var(--colore-sfondo);
+  color: var(--colore-accento-forte);
   border-radius: 999px;
   padding: 0.7rem 1.4rem;
   font-weight: 700;
   text-decoration: none;
-  box-shadow: 0 10px 24px -8px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 10px 24px -8px var(--colore-accento);
   display: flex;
   align-items: flex-end;
 }

@@ -1,0 +1,73 @@
+:root {
+  /* TONALITÀ PRINCIPALE */
+  --h: 255;
+
+  /* PALETTE GENERATIVA */
+  --colore-chiaro: hsl(var(--h), 80%, 92%);
+  --colore-medio: hsl(var(--h), 55%, 70%);
+  --colore-scuro: hsl(var(--h), 45%, 45%);
+  --colore-profondissimo: hsl(var(--h), 40%, 15%);
+
+  /* COLORI NEUTRI */
+  --neutro-chiaro: hsl(var(--h), 20%, 98%);
+  --neutro-scuro: hsl(var(--h), 20%, 10%);
+
+  /* TOKEN SEMANTICI */
+  --colore-sfondo: var(--neutro-chiaro);
+  --colore-testo: var(--colore-profondissimo);
+  --colore-accento: var(--colore-medio);
+  --colore-accento-forte: var(--colore-scuro);
+}
+
+:root {
+  /* TIPOGRAFIA */
+
+  --font-titoli: "Cormorant Garamond", Georgia, serif;
+  --font-testo: "Lato", Arial, sans-serif;
+
+  /* SCALA TIPOGRAFICA - RAPPORTO 1.25 */
+
+  --testo-0: 1rem;
+  --testo-1: 1.25rem;
+  --testo-2: 1.563rem;
+  --testo-3: 1.953rem;
+  --testo-4: 2.441rem;
+  --testo-5: 3.052rem;
+}
+
+:root {
+  /* =========================
+     SPAZIATURA
+     Scala modulare 0.25rem
+  ========================= */
+
+  --spazio-1: 0.25rem;
+  --spazio-2: 0.5rem;
+  --spazio-3: 0.75rem;
+  --spazio-4: 1rem;
+  --spazio-5: 1.5rem;
+  --spazio-6: 2rem;
+  --spazio-7: 3rem;
+  --spazio-8: 4rem;
+  --spazio-9: 6rem;
+
+  /* =========================
+     FORME
+  ========================= */
+
+  --raggio-piccolo: 0.5rem;
+  --raggio-medio: 0.875rem;
+  --raggio-grande: 1.25rem;
+  --raggio-extra: 1.75rem;
+  --raggio-tondo: 50%;
+
+  /* =========================
+     PROFONDITÀ E OMBRE
+  ========================= */
+
+  --ombra-morbida: 0 4px 16px hsl(var(--hue), 35%, 20%, 0.1);
+
+  --ombra-media: 0 8px 24px hsl(var(--hue), 40%, 20%, 0.14);
+
+  --ombra-profonda: 0 12px 32px hsl(var(--hue), 45%, 15%, 0.2);
+}

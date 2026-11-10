@@ -90,6 +90,18 @@ img {
   width: 100%;
 }
 
+a:hover,
+button:hover {
+  filter: brightness(1.08);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid hsl(339°, 47%, 32%);
+  outline-offset: 2px;
+}
+
 @media (min-width: 40rem) {
   .galleria {
     flex-direction: row;
