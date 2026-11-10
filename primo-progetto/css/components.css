@@ -1,0 +1,83 @@
+/* =========================
+   COMPONENTI - BOTTONI
+========================= */
+
+.bottone {
+  /* Layout */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spazio-2);
+
+  /* Spaziatura */
+  padding: var(--spazio-3) var(--spazio-5);
+
+  /* Tipografia */
+  font-family: var(--font-testo);
+  font-size: var(--testo-0);
+  font-weight: 700;
+  text-decoration: none;
+
+  /* Aspetto */
+  color: var(--colore-testo);
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: var(--raggio-medio);
+
+  /* Interazione */
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.bottone--primario {
+  background-color: var(--colore-accento-forte);
+  color: var(--neutro-chiaro);
+}
+.bottone--secondario {
+  background-color: transparent;
+  color: var(--colore-accento-forte);
+  border: 1px solid var(--colore-accento-forte);
+}
+.bottone--testuale {
+  background-color: transparent;
+  color: var(--colore-accento-forte);
+  border-color: transparent;
+  padding-inline: var(--spazio-2);
+}
+/* =========================
+   COMPONENTI - BADGE
+========================= */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: var(--spazio-1) var(--spazio-3);
+
+  font-family: var(--font-testo);
+  font-size: var(--testo-0);
+  font-weight: 700;
+
+  border-radius: var(--raggio-tondo);
+}
+.badge--viola {
+  background-color: var(--colore-chiaro);
+  color: var(--colore-profondissimo);
+}
+.badge--verde {
+  background-color: var(--colore-successo-sfondo);
+  color: var(--colore-successo-testo);
+}
+/* =========================
+   STATI INTERATTIVI
+========================= */
+
+/* Passaggio del mouse */
+.bottone:hover {
+  filter: brightness(0.9);
+}
+
+/* Navigazione tramite tastiera */
+.bottone:focus-visible {
+  outline: 3px solid var(--colore-accento-forte);
+  outline-offset: 4px;
+}

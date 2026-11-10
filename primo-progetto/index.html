@@ -16,8 +16,9 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Lato:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="tokens.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
   </head>
 
   <body>
@@ -37,14 +38,26 @@
         <section class="hero">
           <h2>Ciao, sono Ilenia</h2>
           <p>Sono una cantante pop e sto imparando a creare siti web.</p>
-          <a class="bottone" href="contatti.html">Scrivimi</a>
+          <a class="bottone bottone--primario" href="contatti.html">Scrivimi</a>
           <img class="ritratto" src="immagini/ilenia.JPG" alt="Mio ritratto" />
         </section>
         <section>
-          <div class="playlist">
-            <h2>La mia playlist</h2>
-            <p>I brani che mi accompagnano</p>
-            <a href="progetti.html">I miei brani</a>
+          <div class="componenti">
+            <h2>I miei componenti</h2>
+
+            <div class="gruppo-bottoni">
+              <a href="progetti.html" class="bottone bottone--secondario">
+                I miei progetti
+              </a>
+              <a href="index.html" class="bottone bottone--testuale">
+                Scopri di più
+              </a>
+            </div>
+
+            <div class="gruppo-badge">
+              <span class="badge badge--viola">In corso</span>
+              <span class="badge badge--verde">Completato</span>
+            </div>
           </div>
         </section>
       </main>

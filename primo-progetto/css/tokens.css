@@ -17,6 +17,8 @@
   --colore-testo: var(--colore-profondissimo);
   --colore-accento: var(--colore-medio);
   --colore-accento-forte: var(--colore-scuro);
+  --colore-successo-sfondo: hsl(145, 45%, 88%);
+  --colore-successo-testo: hsl(145, 65%, 22%);
 }
 
 :root {
@@ -65,9 +67,9 @@
      PROFONDITÀ E OMBRE
   ========================= */
 
-  --ombra-morbida: 0 4px 16px hsl(var(--hue), 35%, 20%, 0.1);
+  --ombra-morbida: 0 4px 16px hsl(var(--h), 35%, 20%, 0.1);
 
-  --ombra-media: 0 8px 24px hsl(var(--hue), 40%, 20%, 0.14);
+  --ombra-media: 0 8px 24px hsl(var(--h), 40%, 20%, 0.14);
 
-  --ombra-profonda: 0 12px 32px hsl(var(--hue), 45%, 15%, 0.2);
+  --ombra-profonda: 0 12px 32px hsl(var(--h), 45%, 15%, 0.2);
 }
