@@ -1,1 +1,1 @@
-console.log(il sito è vivo!");
+console.log("il sito è vivo!");
