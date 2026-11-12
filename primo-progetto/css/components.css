@@ -81,3 +81,13 @@
   outline: 3px solid var(--colore-accento-forte);
   outline-offset: 4px;
 }
+@media (prefers-color-scheme: dark) {
+  img {
+    filter: brightness(0.9) contrast(1.05);
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid var(--colore-bordo);
+  }
+}

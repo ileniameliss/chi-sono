@@ -20,6 +20,28 @@
   --colore-successo-sfondo: hsl(145, 45%, 88%);
   --colore-successo-testo: hsl(145, 65%, 22%);
 }
+/* =========================
+   TEMA SCURO AUTOMATICO
+========================= */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+
+    --colore-sfondo: var(--colore-profondissimo);
+    --colore-superficie: hsl(var(--h), 35%, 20%);
+
+    --colore-testo: var(--neutro-chiaro);
+    --colore-testo-secondario: hsl(var(--h), 20%, 80%);
+
+    --colore-accento: var(--colore-medio);
+    --colore-accento-forte: var(--colore-medio);
+
+    --colore-testo-su-accento: var(--colore-profondissimo);
+
+    --colore-bordo: hsl(var(--h), 25%, 40%);
+  }
+}
 
 :root {
   /* TIPOGRAFIA */
