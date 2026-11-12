@@ -106,7 +106,7 @@ nav a {
 }
 .hero {
   background-color: var(--color-sfondo);
-  background-image: url("immagini/ileniapalco.jpg");
+  background-image: url("../immagini/ileniapalco.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -115,7 +115,7 @@ nav a {
   padding: 4rem 1.5rem;
   border-radius: 12px;
   box-shadow: 0 8px 24px -4px var(--colore-accento);
-  background: url("immagini/ileniapalco.jpg") center / cover;
+  background: url("../immagini/ileniapalco.jpg") center / cover;
 }
 
 .bottone {
